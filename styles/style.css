@@ -1,0 +1,63 @@
+.login-frame {    
+    max-width: 400px; 
+    margin: 10% auto 0 auto;
+}
+
+.main_frame {
+    margin-top: 5%;
+}
+
+body {
+    background-image: url(/devControl/images/bg.jpg);
+}
+
+#content {
+    margin-top: 60px;
+}
+
+.list-group-item:hover {
+    background-color: #272b2e !important;
+}
+
+.list-group-item.node-selected:hover {
+    background-color: rgb(66, 139, 202) !important;
+}
+
+#buglist_filter {
+    text-align: right;        
+}
+
+.hiddenSort {
+    display: none;
+}
+
+.buglist tr td {
+    cursor: pointer;
+}
+
+.tab-content {
+    margin-top: 10px; 
+}
+
+.comment-button {
+    margin-top: 10px;
+}
+
+.select2-results__option {
+    color: #272b30;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    list-style: none;
+    color: #272b30;
+}
+
+.admin-panel-header {
+    border: none !important;
+    background-image: none !important;
+    margin-bottom: 0px !important;
+}
+
+.admin-panel-header > li {
+    font-size: 18px;
+}

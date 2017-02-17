@@ -1,0 +1,52 @@
+
+RewriteEngine on 
+
+RewriteRule ^bugtracker/category/([0-9]+)/bug/([0-9]+)/file-delete/([0-9]+)$ bugtracker.php?act=file-delete&categoryID=$1&bugID=$2&fileID=$3
+
+RewriteRule ^bugtracker/category/([0-9]+)/comment/([0-9]+)/(.*)$ bugtracker.php?act=comment-$3&commentID=$2&categoryID=$1
+
+#IN:  bugtracker.php?act=showBug&categoryID=51&bugID=93
+#OUT: bugtracker/category/51/bug/93/show
+#RewriteRule ^bugtracker/category/([0-9]+)/bug/([0-9]+)/show$ bugtracker.php?act=showBug&categoryID=$1&bugID=$2
+RewriteRule ^bugtracker/category/([0-9]+)/bug/([0-9]+)/(.*)$ bugtracker.php?act=bug-$3&categoryID=$1&bugID=$2
+
+#IN:  bugtracker.php?act=showBuglist&category=51
+#OUT: bugtracker/category/51/show
+#RewriteRule ^bugtracker/category/([0-9]+)/show$ bugtracker.php?act=showBuglist&categoryID=$1 
+RewriteRule ^bugtracker/category/([0-9]+)/(.*)$ bugtracker.php?act=category-$2&categoryID=$1
+
+#IN:  bugtracker.php?act=file-download&fileID=93
+#OUT: bugtracker/file-download/93
+RewriteRule ^bugtracker/file-download/([0-9]+)$ download.php?act=file-download&fileID=$1
+
+RewriteRule ^changelog/project/([0-9]+)/change-(.*)$ changelog.php?act=change-$2&projectID=$1
+
+RewriteRule ^changelog/([0-9]+)/(.*)$ changelog.php?act=change-$2&changeID=$1
+
+RewriteRule ^admin-panel/user/([0-9]+)/(.*)$ admin-panel.php?act=user-$2&userID=$1
+
+RewriteRule ^admin-panel/user/(.*)$ admin-panel.php?act=$1
+
+RewriteRule ^admin-panel/group/add-user/([0-9]+)$ admin-panel.php?act=group-add-user&userID=$1
+
+RewriteRule ^admin-panel/group/([0-9]+)/remove-user/([0-9]+)$ admin-panel.php?act=group-remove-user&groupID=$1&userID=$2
+
+RewriteRule ^admin-panel/group/([0-9]+)/(.*)$ admin-panel.php?act=group-$2&groupID=$1
+
+RewriteRule ^admin-panel/group/create admin-panel.php?act=group-create
+
+#IN:  user.php?act=user-show&id=5
+#OUT: user/5/nabrezzelt
+RewriteRule ^user/([0-9]+)/([A-Za-z0-9]*)$ user.php?act=user-show&userID=$1
+
+#Rewriting von bugtracker.php in bugtracker
+RewriteRule ^bugtracker bugtracker.php
+#RewriteRule ^seite_([0-9]+).html$ seite.php?id=$1
+
+RewriteRule ^changelog changelog.php
+
+RewriteRule ^account-panel account-panel.php
+
+RewriteRule ^admin-panel admin-panel.php
+
+RewriteRule ^logout logout.php

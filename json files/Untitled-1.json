@@ -1,0 +1,115 @@
+[
+    {
+        text: "PvP",
+        href: '#parent1',
+        tags: ['4'],
+        nodes: [
+        {
+            text: "Arena",
+            tags: ['16'],
+            nodes: [
+                {
+                    text: "Ring der Ehre",
+                    tags: ['83']
+                },
+                {
+                    text: "Nagrand",
+                    tags: ['26']
+                },
+                {
+                    text: "Ruinen von Lordaeron",
+                    tags: ['12']
+                },
+                {
+                    text: "Arena des Schergrats",
+                    tags: ['56']
+                },
+                {
+                    text: "Arena von Dalaran",
+                    tags: ['90']
+                }
+            ]
+        },
+        {
+            text: "Schlachtfeld",
+            tags: ['10'],
+            nodes: [
+                {
+                    text: "Arathibecken",
+                    tags: ['66']
+                },
+                {
+                    text: "Auge des Sturms",
+                    tags: ['19']
+                },
+                {
+                    text: "Strand der Uralten",
+                    tags: ['26']
+                },
+                {
+                    text: "Schlacht um Gilneas",
+                    tags: ['10']
+                },
+                {
+                    text: "Zwillingsgipfel",
+                    tags: ['87']
+                }
+            ]
+        }
+        ]
+    },
+    {
+        text: "Klassen",
+        tags: ['519'],
+        nodes: [
+            {
+                text: "Schamane",
+                tags: ['44']
+            },        
+            {
+                text: "Magier",
+                tags: ['49']
+            },
+            {
+                text: "Druide",
+                tags: ['63']
+            },
+            {
+                text: "Priester",
+                tags: ['10']
+            },
+            {
+                text: "Todesritter",
+                tags: ['1']
+            },
+            {
+                text: "Schurke",
+                tags: ['146']
+            },
+            {
+                text: "Hexenmeister",
+                tags: ['184']
+            },
+            {
+                text: "Paladin",
+                tags: ['154']
+            },
+            {
+                text: "Krieger",
+                tags: ['14']
+            },
+            {
+                text: "Jäger",
+                tags: ['14']
+            }
+        ]
+    },
+    {
+        text: "Instanzen",
+        tags: ['198']
+    },
+    {
+        text: "Schlachtzüge",
+        tags: ['156']
+    }
+]

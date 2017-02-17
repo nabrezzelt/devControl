@@ -1,0 +1,39 @@
+[
+    text: 'Gerneral',
+    href: '',
+    tags: ['0'],
+    nodes: [
+        {
+            text: 'PvP',
+            href: '',
+            tags: ['0'],
+            nodes: [
+                {
+                    text: 'Schlachtfeld',
+                    href: '',
+                    tags: ['0'],
+                    nodes: [
+                    {
+
+                    }
+                ]
+            }
+        ]
+            text: 'PvE',
+            href: '',
+            tags: ['0'],
+            nodes: [
+            {
+
+            }
+        ],
+            text: 'Klassen',
+            href: '',
+            tags: ['0'],
+            nodes: [
+            {
+
+            }
+        ]
+    }
+]
